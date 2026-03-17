@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/auth";
+const BASE_URL = "backend-authentication-production.up.railway.app/api/auth";
 
 export const signupUser = async (data) => {
   const res = await fetch(`${BASE_URL}/signup`, {
