@@ -1,5 +1,4 @@
-const BASE_URL = "backend-authentication-production.up.railway.app/api/auth";
-
+const BASE_URL =process.env.REACT_APP_API_URL;
 export const signupUser = async (data) => {
   const res = await fetch(`${BASE_URL}/signup`, {
     method: "POST",
